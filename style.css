@@ -365,7 +365,6 @@ ul {
 }
 
 /* ************************** Contact Form */
-
 .contact-section {
     background-color: var(--white);
     padding: 60px 0;
@@ -380,54 +379,52 @@ ul {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
+    text-align: center;
+    max-width: 40%;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
-label {
-    display: block;
-    visibility: hidden;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+.icon-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light2);
+    border-radius: 10px;
 }
 
-.contact-section .container {
-    max-width: 40%; /* Adjust the value as needed*/
-}
-
-input[type="text"],
-input[type="email"],
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid var(--white);
-    border-radius: 5px;
-    outline-color: var(--dark2);
-}
-
-textarea {
-    resize: vertical;
-}
-
-.submit-button {
-    margin-top: 20px;
-    margin-bottom: 10vh;
+.icon-box img {
+    width: 70%;
+    height: 70%;
 }
 
 @media screen and (max-width: 1080px) {
     .contact-section .container {
-        max-width: 70%; /* Adjust the value as needed*/
+        max-width: 70%;
     }
 }
+
 @media screen and (max-width: 768px) {
     .contact-section .container {
-        max-width: 85%; /* Adjust the value as needed*/
+        max-width: 85%;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .icon-box {
+        width: 60px;
+        height: 60px;
     }
 }
+
 
 /* ************************* Footer */
 
